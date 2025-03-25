@@ -12,10 +12,6 @@ Ability in a Three-Class Disease Setting".
 As a preliminary step, we load on a clean environment all the required
 libraries.
 
-The code described below requires the installation of the UNL.est
-package, available in this repository. See the README for instructions
-on the installation.
-
 As a preliminary step, we load on a clean environment all the required
 libraries.
 
