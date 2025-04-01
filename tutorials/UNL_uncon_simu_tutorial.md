@@ -13,17 +13,11 @@ As a preliminary step, we load on a clean environment all the required
 libraries.
 
 ``` r
-library(LSBP)    # Load the LSBP package
-library(ggplot2) # Graphical library
-library(coda)    # For MCMC analysis
-library(splines) # For computing the natural B-splines basis
-library(pracma)
-library(DIRECT)
 library(sn)
 library(nor1mix)
 library(future)
 library(future.apply)
-library(rjags)
+library(ggplot2)
 ```
 
 We need to load some predefined functions for the simulation study in
@@ -362,7 +356,7 @@ cowplot::plot_grid(median_box_unconc1,median_box_unconc2,median_box_unconc3,
                    median_box_unconc7,median_box_unconc8,median_box_unconc9,ncol = 3)
 ```
 
-![](UNL_uncon_simu_tutorial_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
+![](UNL_uncon_simu_tutorial_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
 
 ## 95% CI width boxplots
 
@@ -494,4 +488,4 @@ cowplot::plot_grid(width_box_unconc1,width_box_unconc2,width_box_unconc3,
                    width_box_unconc7,width_box_unconc8,width_box_unconc9,ncol = 3)
 ```
 
-![](UNL_uncon_simu_tutorial_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
+![](UNL_uncon_simu_tutorial_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->

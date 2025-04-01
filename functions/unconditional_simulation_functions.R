@@ -1,14 +1,7 @@
-library(LSBP)    # Load the LSBP package
-library(ggplot2) # Graphical library
-library(coda)    # For MCMC analysis
-library(splines) # For computing the natural B-splines basis
-library(pracma)
-library(DIRECT)
 library(sn)
 library(nor1mix)
 library(future)
 library(future.apply)
-library(rjags)
 ##simpson's rule
 simpson_inte <- function(x.vec,f.vec) {
   n1=length(x.vec)

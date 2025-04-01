@@ -14,17 +14,19 @@ knitr::opts_chunk$set(echo = TRUE)
 
 As a preliminary step, we load on a clean environment all the required libraries.
 ```{r, eval=FALSE}
-library(LSBP)    # Load the LSBP package
-library(ggplot2) # Graphical library
-library(coda)    # For MCMC analysis
-library(splines) # For computing the natural B-splines basis
-library(pracma)
-library(DIRECT)
 library(sn)
 library(nor1mix)
 library(future)
 library(future.apply)
-library(rjags)
+library(ggplot2)
+```
+
+```{r, include=FALSE}
+library(sn)
+library(nor1mix)
+library(future)
+library(future.apply)
+library(ggplot2)
 ```
 
 We need to load some predefined functions for the simulation study in the unconditional case. 

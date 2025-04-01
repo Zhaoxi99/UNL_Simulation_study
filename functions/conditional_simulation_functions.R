@@ -1,15 +1,8 @@
-library(ggplot2) # Graphical library
-library(coda)    # For MCMC analysis
-library(splines) # For computing the natural B-splines basis
-library(pracma)
-library(DIRECT)
+library(splines)
 library(LSBP)
-library(sn)
-library(rjags)
 library(nor1mix)
 library(future)
 library(future.apply)
-library(MASS)
 
 
 

@@ -13,17 +13,12 @@ As a preliminary step, we load on a clean environment all the required
 libraries.
 
 ``` r
-library(LSBP)    # Load the LSBP package
-library(ggplot2) # Graphical library
-library(coda)    # For MCMC analysis
-library(splines) # For computing the natural B-splines basis
-library(pracma)
-library(DIRECT)
-library(sn)
+library(splines)
+library(LSBP)
 library(nor1mix)
 library(future)
 library(future.apply)
-library(rjags)
+library(ggplot2)
 ```
 
 We need to load some predefined functions for the simulation study in
@@ -558,7 +553,7 @@ cowplot::plot_grid(plot_con_c1_s1,plot_con_c1_s2,plot_con_c1_s3,plot_con_c1_s4,p
                    byrow = FALSE,ncol = 3)
 ```
 
-![](UNL_con_simu_tutorial_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
+![](UNL_con_simu_tutorial_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
 
 ## Coverage vs covariate plots
 
@@ -772,4 +767,4 @@ cowplot::plot_grid(plot_con_coverage_c1_s1,plot_con_coverage_c1_s2,plot_con_cove
                    byrow = FALSE,ncol = 3)
 ```
 
-![](UNL_con_simu_tutorial_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
+![](UNL_con_simu_tutorial_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
