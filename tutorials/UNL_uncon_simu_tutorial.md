@@ -1,13 +1,13 @@
 Tutorial for Simulation study in the unconditional case in the paper
 “The Underlap Coefficient as Measure of a Biomarker’s Discriminatory
-Ability in a Three-Class Disease Setting”
+Ability”
 ================
 Zhaoxi Zhang, Vanda Inácio, and Miguel de Carvalho
 
 In this tutorial we describe the steps for obtaining the results of the
 simulation study in the unconditional case in Section 5.1 of the paper
 "The Underlap Coefficient as Measure of a Biomarker’s Discriminatory
-Ability in a Three-Class Disease Setting".
+Ability".
 
 As a preliminary step, we load on a clean environment all the required
 libraries.
