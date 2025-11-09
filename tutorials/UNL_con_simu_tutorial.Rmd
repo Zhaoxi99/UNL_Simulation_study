@@ -43,8 +43,8 @@ source("../functions/conditional_simulation_functions.R")
 Because we conduct the estimation of underlap repeatedly for 100 datasets in each scenario, so the process could be accelerated by parallelizing the computation. Here I use the future package to demonstrate one way of parallelizing the code, the utilization of the future package is incorporated in the simulation_unl_con_best function.
 ```{r, include=FALSE}
 load(file="//csce.datastore.ed.ac.uk/csce/maths/groups/mdt/simulation_data/con_best/kernel/best_simu_con_s1.RData")
-load(file="//csce.datastore.ed.ac.uk/csce/maths/groups/mdt/simulation_data/con_best/kernel/best_simu_con_s2.RData")
-load(file="//csce.datastore.ed.ac.uk/csce/maths/groups/mdt/simulation_data/con_best/kernel/best_simu_con_s3.RData")
+load(file="//csce.datastore.ed.ac.uk/csce/maths/groups/mdt/simulation_data/revision_bio/best_simu_con_s2.RData")
+load(file="//csce.datastore.ed.ac.uk/csce/maths/groups/mdt/simulation_data/revision_bio/best_simu_con_s3.RData")
 ```
 
 ```{r, eval=FALSE}

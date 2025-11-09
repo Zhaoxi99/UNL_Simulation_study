@@ -328,8 +328,7 @@ fit_and_cal_unl_con_best<-function(l,data_con,R,burn_in,prior1,prior2,prior3,xle
     x_bs.points2=x.points2
     x_bs.points3=x.points3
   }else if(case==2){
-    x1_bs.points <- as.matrix(bs(x.points, intercept = FALSE, degree = 3, 
-                                 knots = quantile(data_fitting1$x,probs = c(0.5))))
+    x1_bs.points <- predict(x_bs1,x.points)
     x_bs.points1=cbind((x1_bs.points[,1]-mean(data_fitting1$BS.1))/sd(data_fitting1$BS.1),
                        (x1_bs.points[,2]-mean(data_fitting1$BS.2))/sd(data_fitting1$BS.2),
                        (x1_bs.points[,3]-mean(data_fitting1$BS.3))/sd(data_fitting1$BS.3),
@@ -337,8 +336,7 @@ fit_and_cal_unl_con_best<-function(l,data_con,R,burn_in,prior1,prior2,prior3,xle
     x_bs.points2=x.points2
     x_bs.points3=x.points3
   }else if(case==3){
-    x1_bs.points <- as.matrix(bs(x.points, intercept = FALSE, degree = 3, 
-                                 knots = c()))
+    x1_bs.points <- predict(x_bs1,x.points)
     x_bs.points1=cbind((x1_bs.points[,1]-mean(data_fitting1$BS.1))/sd(data_fitting1$BS.1),
                        (x1_bs.points[,2]-mean(data_fitting1$BS.2))/sd(data_fitting1$BS.2),
                        (x1_bs.points[,3]-mean(data_fitting1$BS.3))/sd(data_fitting1$BS.3))
